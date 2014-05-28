@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" android:background="#ffffff">
+
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="33dp"
+                    android:layout_gravity="center_horizontal|top" android:background="@android:color/background_light"
+                    android:orientation="horizontal" android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="0dp" android:layout_alignParentTop="true" android:layout_marginTop="0dp"
+                    android:id="@+id/relativeLayout">
+        <Button android:layout_width="40dp" android:layout_height="40dp" android:id="@+id/buttonHome"
+                android:layout_gravity="right" android:background="@drawable/buton_home" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp" android:layout_alignParentTop="true" android:layout_marginTop="0dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textHeader"
+                  android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+                  android:text="Articel Detail" android:textColor="#000000" android:textStyle="bold|italic"
+                  android:textSize="20sp"/>
+    </RelativeLayout>
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView" android:layout_below="@+id/relativeLayout">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_below="@+id/relativeLayout">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="4 Tips Manajemen Keuangan Ketika Anda Masih Berusia Muda Namun Sudah Berpenghasilan "
+                    android:id="@+id/textView"
+                    android:textSize="20dp" android:textColor="#000000" android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="16 mei 2014"
+                    android:id="@+id/textView2" android:layout_below="@+id/textView" android:layout_centerHorizontal="true"
+                    android:textSize="10sp" android:textColor="#000000"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" Mencari uang adalah aktivitas yang penting, namun melakukan manajemen keuangan sama pentingnya serta harus selalu diprioritaskan. Anda muda, berpenghasilan, dan belum menikah? Secepatnya Anda harus mengatur keuangan dengan bijak. Singkirkan jauh-jauh dari pikiran Anda bahwa muda adalah waktunya untuk hura-hura serta menghabiskan uang.  Melalui halaman ini saya akan share 4 tips bagaimana melakukan manajemen keuangan ketika kita berusia muda. "
+                    android:id="@+id/textView3"
+                    android:textSize="12sp" android:textColor="#000000"
+                    android:layout_below="@+id/imageView" android:layout_alignParentLeft="true"
+                    />
+            <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/imageView"
+                    android:background="@drawable/url"
+                    android:layout_below="@+id/textView2" android:layout_centerHorizontal="true"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+                      android:text="1. Sedekahkah 5-10 % Penghasilan Anda"
+                      android:id="@+id/textView4" android:textSize="12sp" android:textColor="#000000"
+                      android:layout_below="@+id/textView3" android:layout_alignParentLeft="true"
+                      android:textStyle="bold"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+                      android:text=" Sedekah adalah rasa syukur dan rasa peduli. Rasa syukur karena kita telah diberikan rezeki, kemudian rasa peduli yang merupakan tanggung jawab kita terhadap sesama. Mendahulukan sedekah memang bukan perkara mudah, apalagi kita masih muda plus segudang ego berada di depan mata.   Kendati demikian, disinilah letak keimanan Anda diuji. Pada dasarnya, sedekah merupakan sebuah aktivitas yang akan mendatangkan energi positif, rasa optimis, dan prasangka-prasangka baik ketika Anda ditimpa kesulitan nantinya. Bahkan, ada percepatan kekayaan dan kelapangan harta dibalik sebuah sedekah yang ikhlas.  Bersedekahlah, sebagian harta Anda adalah milik mereka yang membutuhkan. Inilah saatnya untuk memprioritaskan sedekah karena sejatinya Anda masih muda dan belum terlalu banyak kepentingan. Sedekah adalah aktivitas membayar diri sendiri dan untuk kepentingan Anda sendiri. "
+                      android:id="@+id/textView5" android:textSize="12sp" android:textColor="#000000"
+                      android:layout_below="@+id/textView4" android:layout_alignParentLeft="true"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+                      android:id="@+id/textView6" android:textSize="12sp" android:textColor="#000000"
+                      android:layout_below="@+id/textView5" android:layout_alignParentLeft="true"
+                      android:text="2. Tetap Menjadi Sederhana Sebesar Apapun Gaji Anda" android:textStyle="bold"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+                      android:id="@+id/textView7" android:textSize="12sp" android:textColor="#000000"
+                      android:layout_below="@+id/textView6" android:layout_alignParentLeft="true"
+                      android:text=" Menjadi seorang muda yang glamour plus gadget mewah serta kendaraan mahal saya rasa adalah penyakit kebanyakan kaum muda. Gaji yang lumayan di awal karir memang memberikan godaan yang cukup besar. Tetapi pada dasarnya, berpikir bahwa masa muda adalah masa santai yang harus digunakan untuk berpuas diri terhadap kemewahan merupakan kesalahan besar.  Jika pikiran sudah terpaut dengan kemewahan serta pemborosan sejak muda, lambat laun hal itu akan menjadi kebiasaan yang bisa menjadi bom waktu ketika Anda tua. Bukan tidak mungkin gaji yang jutaan bahkan puluhan juta setiap bulan akan habis dan membuat Anda jatuh miskin karena Anda hanya mementingkan kebutuhan-kebutuhan semu.  Kendati demikian, semua uang itu bisa menjadi buah yang manis di masa tua ketika Anda berinvestasi. Sebesar apapun gaji Anda, tetaplah menjadi pribadi sederhana dan alihkan sebagian uang untuk berinvestasi jangka panjang. Apa investasi yang cukup baik serta mudah untuk dikelola? Lihat poin selanjutnya."/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView8"
+                      android:textSize="12sp" android:textColor="#000000" android:layout_below="@+id/textView7"
+                      android:layout_alignParentLeft="true"
+                      android:text="3. Sisihkan Sebagian Tabungan Anda Untuk Investasi Emas" android:textStyle="bold"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView9"
+                      android:textSize="12sp" android:textColor="#000000" android:layout_below="@+id/textView8"
+                      android:layout_alignParentLeft="true"
+                      android:text="Emas atau dalam konteks ini adalah Logam Mulia merupakan cara yang paling mudah, cepat, dan praktis untuk menginvestasikan uang Anda. Saat Anda berada di usia yang banyak sekali menemukan hasrat pengeluaran uang, menyegerakan investasi logam mulia adalah perkara wajib. "/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView10"
+                      android:textSize="12sp" android:textColor="#000000" android:layout_below="@+id/textView9"
+                      android:layout_alignParentLeft="true"
+                      android:text="4. Ciptakan Tabungan-Tabungan Tambahan" android:textStyle="bold"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView11"
+                      android:textSize="12sp" android:textColor="#000000" android:layout_below="@+id/textView10"
+                      android:layout_alignParentLeft="true"
+                      android:text=" Misalkan gaji bulanan Anda adalah Rp. 2.500.000. Rp. 200.000 sudah Anda gunakan untuk bersedekah, kemudian Rp. 800.000 adalah biaya bulanan Anda, dan Rp. 1000.000 sukses dialokasikan untuk membeli Logam Mulia.  Dari perhitungan sederhana tersebut, uang Anda masih tersisa Rp. 500.000. Cadangan uang ini bisa Anda gunakan untuk tabungan-tabungan lain misalnya tabungan liburan ke luar negeri, tabungan dana kesehatan, tabungan kendaraan, atau Anda bisa menyerahkan kepada orang tua sebagai salah satu simbol bakti kepada mereka.   Masih muda dan berpenghasilan? Tentu semua orang mau seperti itu. Namun jangan hanya mengejar penghasilan semata, namun kejar dan praktikkan juga ilmu manajemen keuangan yang bijak. Good luck!"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#848484">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="33dp"
+                    android:layout_gravity="center_horizontal|top" android:background="@android:color/background_light"
+                    android:orientation="horizontal" android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="0dp" android:layout_alignParentTop="true" android:layout_marginTop="0dp"
+                    android:id="@+id/relativeLayout">
+        <Button android:layout_width="40dp" android:layout_height="40dp" android:id="@+id/buttonHome"
+                android:layout_gravity="right" android:background="@drawable/buton_home" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp" android:layout_alignParentTop="true" android:layout_marginTop="0dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textHeader"
+                  android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+                  android:text="Petunjuk" android:textColor="#000000" android:textStyle="bold|italic"
+                  android:textSize="20sp"/>
+    </RelativeLayout>
+    <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView" android:layout_below="@+id/relativeLayout">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_below="@+id/relativeLayout">
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal|top" android:background="@drawable/button_linier"
+                            android:id="@+id/linierLayout5" android:weightSum="1"
+                            android:layout_below="@+id/linierLayout4" android:layout_alignParentLeft="true"
+                            android:layout_marginTop="3dp">
+                <ImageView android:layout_width="100dp" android:layout_height="100dp" android:id="@+id/imageView5"
+                           android:background="@drawable/articel1" android:layout_alignParentLeft="true" android:layout_marginLeft="0dp"
+                           android:layout_alignParentTop="true" android:layout_marginTop="0dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textAppearance="?android:attr/textAppearanceLarge" android:text="Membaca Artikel"
+                          android:id="@+id/textView5" android:textColor="#000000" android:textSize="20sp"
+                          android:layout_centerVertical="true" android:layout_toRightOf="@+id/imageView5"/>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal|top" android:background="@drawable/button_linier"
+                            android:id="@+id/linierLayout4" android:weightSum="1"
+                            android:layout_below="@+id/linierLayout3" android:layout_alignParentLeft="true"
+                            android:layout_marginTop="3dp">
+                <ImageView android:layout_width="100dp" android:layout_height="100dp" android:id="@+id/imageView4"
+                           android:background="@drawable/cpeople" android:layout_alignParentLeft="true" android:layout_marginLeft="0dp"
+                           android:layout_alignParentTop="true" android:layout_marginTop="0dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textAppearance="?android:attr/textAppearanceLarge" android:text="Mendaftarkan Diri Sebagai Pencari Kerja"
+                          android:id="@+id/textView4" android:textColor="#000000" android:textSize="20sp"
+                          android:layout_centerVertical="true" android:layout_toRightOf="@+id/imageView4"/>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal|top" android:background="@drawable/button_linier"
+                            android:id="@+id/linierLayout3" android:weightSum="1"
+                            android:layout_below="@+id/linierLayout2" android:layout_alignParentLeft="true"
+                            android:layout_marginTop="3dp">
+                <ImageView android:layout_width="100dp" android:layout_height="100dp" android:id="@+id/imageView3"
+                           android:background="@drawable/job" android:layout_alignParentLeft="true" android:layout_marginLeft="0dp"
+                           android:layout_alignParentTop="true" android:layout_marginTop="0dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textAppearance="?android:attr/textAppearanceLarge" android:text="Melihat Pencari Kerja"
+                          android:id="@+id/textView2" android:textColor="#000000" android:textSize="20sp"
+                          android:layout_centerVertical="true" android:layout_toRightOf="@+id/imageView3"/>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal|top" android:background="@drawable/button_linier"
+                            android:id="@+id/linierLayout2"
+                            android:weightSum="1" android:layout_below="@+id/linierLayout1"
+                            android:layout_alignParentLeft="true" android:layout_marginTop="3dp">
+                <ImageView android:layout_width="100dp" android:layout_height="100dp" android:id="@+id/imageView2"
+                           android:background="@drawable/cjob1" android:layout_alignParentLeft="true" android:layout_marginLeft="0dp"
+                           android:layout_alignParentTop="true" android:layout_marginTop="0dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textAppearance="?android:attr/textAppearanceLarge" android:text="Memasang Informasi Lowongan"
+                          android:id="@+id/textView" android:textColor="#000000" android:textSize="20sp"
+                          android:layout_centerVertical="true" android:layout_toRightOf="@+id/imageView2"/>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal|top" android:background="@drawable/button_linier"
+                            android:id="@+id/linierLayout1" android:layout_below="@+id/relativeLayout"
+                            android:layout_alignParentLeft="true" android:layout_marginTop="3dp" android:weightSum="1"
+                    >
+                <ImageView android:layout_width="100dp" android:layout_height="100dp" android:id="@+id/imageView"
+                           android:background="@drawable/lowongan1" android:layout_alignParentLeft="true" android:layout_marginLeft="0dp"
+                           android:layout_alignParentTop="true" android:layout_marginTop="0dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textAppearance="?android:attr/textAppearanceLarge" android:text="Mencari Informasi Lowongan"
+                          android:id="@+id/textView3" android:textColor="#000000" android:textSize="20sp"
+                          android:layout_centerVertical="true" android:layout_toRightOf="@+id/imageView"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

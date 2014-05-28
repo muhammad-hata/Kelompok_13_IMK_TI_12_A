@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#dbd9d8">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="66dp" android:layout_gravity="center_horizontal|top"
+            android:background="@android:color/background_light" android:orientation="horizontal"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="0dp"
+            android:id="@+id/relativeLayout" android:layout_alignParentTop="true">
+        <Button
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:id="@+id/buttonHome" android:layout_gravity="right" android:background="@drawable/buton_home"
+                android:layout_alignParentLeft="true" android:layout_marginLeft="3dp"
+                android:layout_alignParentTop="true" android:layout_marginTop="3dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textHeader"
+                android:textColor="#000000" android:textStyle="bold|italic"
+                android:textSize="20sp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+                android:singleLine="false" android:text="Aritkel"/>
+        <SearchView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:id="@+id/searchView2"
+                    android:layout_below="@+id/textHeader" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:layout_alignParentBottom="true" android:layout_below="@+id/relativeLayout">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_below="@+id/relativeLayout"
+                android:layout_alignParentBottom="true">
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent"
+                            android:layout_height="100dp" android:layout_gravity="center_horizontal|top"
+                            android:background="@drawable/button_linier" android:id="@+id/linierLayout6"
+                            android:weightSum="1" android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true" android:layout_below="@+id/linierLayout5"
+                            android:layout_marginTop="3dp">
+                <ImageView android:layout_width="100dp" android:layout_height="100dp" android:id="@+id/imageView6"
+                           android:background="#3e3e3e" android:layout_alignParentLeft="true"
+                           android:layout_marginLeft="0dp" android:layout_alignParentTop="true"
+                           android:layout_marginTop="0dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textAppearance="?android:attr/textAppearanceLarge" android:text="Judul Artikel"
+                          android:id="@+id/textView" android:textColor="#000000" android:textSize="20sp"
+                          android:layout_alignParentTop="true" android:layout_toRightOf="@+id/imageView6"
+                          android:layout_marginTop="35dp"/>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal|top" android:background="@drawable/button_linier"
+                            android:id="@+id/linierLayout5" android:weightSum="1"
+                            android:layout_below="@+id/linierLayout4" android:layout_alignParentLeft="true"
+                            android:layout_marginTop="3dp">
+                <ImageView android:layout_width="100dp" android:layout_height="100dp" android:id="@+id/imageView5"
+                           android:background="#3e3e3e" android:layout_alignParentLeft="true" android:layout_marginLeft="0dp"
+                           android:layout_alignParentTop="true" android:layout_marginTop="0dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textAppearance="?android:attr/textAppearanceLarge" android:text="Judul Artikel"
+                          android:id="@+id/textView15" android:textColor="#000000" android:textSize="20sp"
+                          android:layout_alignParentTop="true" android:layout_toRightOf="@+id/imageView5"
+                          android:layout_marginTop="35dp"/>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal|top" android:background="@drawable/button_linier"
+                            android:id="@+id/linierLayout4" android:weightSum="1"
+                            android:layout_below="@+id/linierLayout3" android:layout_alignParentLeft="true"
+                            android:layout_marginTop="3dp">
+                <ImageView android:layout_width="100dp" android:layout_height="100dp" android:id="@+id/imageView4"
+                           android:background="#3e3e3e" android:layout_alignParentLeft="true" android:layout_marginLeft="0dp"
+                           android:layout_alignParentTop="true" android:layout_marginTop="0dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textAppearance="?android:attr/textAppearanceLarge" android:text="Judul Artikel"
+                          android:id="@+id/textView12" android:textColor="#000000" android:textSize="20sp"
+                          android:layout_centerVertical="true" android:layout_toRightOf="@+id/imageView4"/>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal|top" android:background="@drawable/button_linier"
+                            android:id="@+id/linierLayout3" android:weightSum="1"
+                            android:layout_below="@+id/linierLayout2" android:layout_alignParentLeft="true"
+                            android:layout_marginTop="3dp">
+                <ImageView android:layout_width="100dp" android:layout_height="100dp" android:id="@+id/imageView3"
+                           android:background="#3e3e3e" android:layout_alignParentLeft="true" android:layout_marginLeft="0dp"
+                           android:layout_alignParentTop="true" android:layout_marginTop="0dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textAppearance="?android:attr/textAppearanceLarge" android:text="Judul Atikel"
+                          android:id="@+id/textView9" android:textColor="#000000" android:textSize="20sp"
+                          android:layout_centerVertical="true" android:layout_toRightOf="@+id/imageView3"/>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal|top" android:background="@drawable/button_linier"
+                            android:id="@+id/linierLayout2"
+                            android:weightSum="1"
+                            android:layout_below="@+id/linearLayout" android:layout_alignParentLeft="true"
+                            android:layout_marginTop="3dp">
+                <ImageView android:layout_width="100dp" android:layout_height="100dp" android:id="@+id/imageView2"
+                           android:background="@drawable/url" android:layout_alignParentLeft="true" android:layout_marginLeft="0dp"
+                           android:layout_alignParentTop="true" android:layout_marginTop="0dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textAppearance="?android:attr/textAppearanceLarge" android:text="4 Tips Manajemen Keuangan Ketika Anda Masih Berusia Muda Namun Sudah Berpenghasilan. "
+                          android:id="@+id/textView6" android:textColor="#000000" android:textSize="20sp"
+                          android:layout_centerVertical="true" android:layout_toRightOf="@+id/imageView2"/>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="100dp"
+                          android:layout_gravity="center_horizontal|top" android:background="@drawable/button_linier" android:id="@+id/linearLayout"
+                          android:layout_below="@+id/relativeLayout" android:layout_alignParentLeft="true"
+                          android:layout_marginTop="5dp" android:weightSum="1">
+                <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/imageView" android:background="#3e3e3e" android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="0dp" android:layout_alignParentTop="true" android:layout_marginTop="0dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textAppearance="?android:attr/textAppearanceLarge" android:text="Judul Artikel"
+                          android:id="@+id/textView3" android:textColor="#000000" android:textSize="20sp"
+                          android:layout_centerVertical="true" android:layout_toRightOf="@+id/imageView"
+                        />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

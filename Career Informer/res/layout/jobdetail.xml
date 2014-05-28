@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" android:background="#ffffff">
+
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="33dp"
+                    android:layout_gravity="center_horizontal|top" android:background="@android:color/background_light"
+                    android:orientation="horizontal" android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="0dp" android:layout_alignParentTop="true" android:layout_marginTop="0dp"
+                    android:id="@+id/relativeLayout">
+        <Button android:layout_width="40dp" android:layout_height="40dp" android:id="@+id/buttonHome"
+                android:layout_gravity="right" android:background="@drawable/buton_home" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp" android:layout_alignParentTop="true" android:layout_marginTop="0dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textHeader"
+                  android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+                  android:text="Detail Lowongan Kerja" android:textColor="#000000" android:textStyle="bold|italic"
+                  android:textSize="20sp"/>
+    </RelativeLayout>
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView" android:layout_below="@+id/relativeLayout">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_below="@+id/relativeLayout">
+            <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/imageView"
+                    android:background="@android:drawable/ic_menu_gallery"
+                    android:layout_gravity="center" android:layout_below="@+id/textView2"
+                    android:layout_centerHorizontal="true"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Nama Perusahaan"
+                    android:id="@+id/textView"
+                    android:textSize="20dp" android:textColor="#000000" android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Tanggal Terbit"
+                    android:id="@+id/textView2"
+                    android:textSize="10sp" android:textColor="#000000"
+                    android:layout_below="@+id/textView" android:layout_centerHorizontal="true"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Detail tentang Info Pekerjaan"
+                    android:id="@+id/textView3"
+                    android:textSize="20sp" android:textColor="#000000"
+                    android:layout_below="@+id/imageView" android:layout_centerHorizontal="true"
+                    android:layout_marginTop="73dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

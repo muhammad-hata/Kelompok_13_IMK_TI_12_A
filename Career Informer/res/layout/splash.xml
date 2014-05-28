@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:foregroundGravity="center_vertical" android:background="#ffffff">
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView">
+        <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_alignParentTop="true"
+                android:id="@+id/FrameLayout1">
+            <ImageView
+                    android:layout_width="363dp"
+                    android:layout_height="363dp"
+                    android:id="@+id/imageView" android:layout_gravity="center_horizontal|top" android:background="@drawable/splas"
+                    android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+            <ProgressBar
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBar1" android:layout_gravity="center_horizontal"
+                    android:indeterminate="false"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true" android:layout_marginTop="400dp"/>
+        </FrameLayout>
+    </ScrollView>
+</RelativeLayout>

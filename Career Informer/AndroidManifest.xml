@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="Id.StripLampunk.Career_Informer"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="10"/>
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+        <activity android:name=".splash"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MyActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".job"></activity>
+        <activity android:name=".cjob"></activity>
+        <activity android:name=".people"></activity>
+        <activity android:name=".cpeople"></activity>
+        <activity android:name=".articel"></activity>
+        <activity android:name=".help"></activity>
+        <activity android:name=".jobdetail"></activity>
+        <activity android:name=".peopledetail"></activity>
+        <activity android:name=".articeldetail"></activity>
+        <activity android:name=".jobdetail2"></activity>
+        <activity android:name=".peopledetail2"></activity>
+        <activity android:name=".articeldetail2"></activity>
+    </application>
+</manifest>
